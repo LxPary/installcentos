@@ -114,7 +114,7 @@ yum -y --enablerepo=epel install ansible.rpm
 [ ! -d openshift-ansible ] && git clone https://github.com/openshift/openshift-ansible.git -b release-${VERSION} --depth=1
 
 cat <<EOD > /etc/hosts
-127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4  console console.${DOMAIN}  
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 console console.${DOMAIN}  
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 EOD
 
