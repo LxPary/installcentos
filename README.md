@@ -51,7 +51,8 @@ $ export PASSWORD=password
 ```
 # Instead of using loopback, setup DeviceMapper on this disk.
 # !! All data on the disk will be wiped out !!
-$ lsbl
+$ lsblk
+$ lsblk -f
 $ export DISK="/dev/sda"
 ```
 
